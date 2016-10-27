@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="portfolio">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Navid Fallah" content="Navid Fallahazad Protfolio web developer website design ">
+    <link href="https://fonts.googleapis.com/css?family=Amiko|Arima+Madurai|Farsan|Lalezar|Mogra|Rakkas|Rasa|Shrikhand|Suez+One|Yatra+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <title>Navid Fallazad</title>
+</head>
+
+<body>
+    <header class="header-wrapper" ng-controller="homepage">
+        <div class="header-half-wrapper">
+            <p id="logo" ng-click="home()">Navid Fallahazad</p>
+        </div>
+        <div class="header-half-wrapper">
+            <nav>
+                <ul class="navlist">
+                    <li ng-click="about()">About</li>
+                    <li ng-click="portfolio()">Portfolio</li>
+                    <li ng-click="contact()">Contact</li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div ng-view></div>
+    <footer>
+      <div class="footer-wrapper">
+          <div class="footer-wrapper-half">
+              <h1>navid.fallahazad@gmail.com</h1>
+          </div>
+          <div class="footer-wrapper-half">
+            <ul class="link-list">
+            <li>
+                <a href="https://github.com/NavidFa" target="_blank"> <i class="fa fa-github-square fa-4x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/navid-fallahazad-7aaab5124?trk=hp-identity-name" target="_blank"> <i class="fa fa-linkedin-square fa-4x"></i>
+                </a>
+            </li>
+            </ul>
+
+          </div>
+      </div>
+      </div>
+
+  </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+
+
+</body>
+
+</html>
